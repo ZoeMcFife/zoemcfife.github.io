@@ -6,6 +6,8 @@
     <title>Zoe McFife - Portfolio</title>
     <meta name="Author" content="Zoe McFife">
     <meta name="description" content="Zoe McFife's very cool Portfolio">
+    <meta property="og:image" content="/images/logo/Logo.svg">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/logo/Favicon.png">
 
@@ -14,15 +16,14 @@
 
 <body>
 
-<!--    My navbar design is split in half
-        so, 2 Divs for left and right side -->
+<a href="#main-content" class="skip-link">Skip Navigation</a>
 <header>
     <nav class="navbar">
         <div class="navbar-left navbar-slot">
             <ul class="navbar-slot-list">
                 <li>
                     <a href="index.html">
-                        <img class="navbar-logo" src="images/logo/Logo.svg" alt="Pirates of Fife Logo">
+                        <img class="navbar-logo" src="/images/logo/Logo.svg" alt="Pirates of Fife Logo">
                     </a>
                 </li>
                 <li>
@@ -34,10 +35,10 @@
         <div class="navbar-right navbar-slot">
             <ul id="navbar-right-desktop" class="navbar-slot-list">
                 <li>
-                    <a href="#">About</a>
+                    <a href="pages/about.html">About</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="pages/contact.html">Contact</a>
                 </li>
             </ul>
 
@@ -51,7 +52,7 @@
         </div>
     </nav>
 
-    <nav id="navbar-mobile" class="navbar-mobile collapsed">
+    <nav id="navbar-mobile" class="navbar-mobile collapsed" aria-hidden="true">
         <div class="navbar-mobile-logo">
             <a href="index.html">
                 <img class="navbar-logo" src="images/logo/Logo.svg" alt="Pirates of Fife Logo">
@@ -61,8 +62,8 @@
         </div>
 
         <div class="navbar-mobile-links">
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/contact.html">Contact</a>
         </div>
 
         <div class="navbar-mobile-burger-section">
@@ -73,7 +74,7 @@
     </nav>
 </header>
 
-<main>
+<main id="main-content">
     <section class="hero">
         <hgroup>
             <h1 class="hero-title">Zoe<br>McFife</h1>
@@ -82,19 +83,17 @@
         <div class="hero-img">
             <img src="images/logo/Logo.svg" alt="Logo">
         </div>
-
     </section>
 
     <section class="projects">
         <div class="project project-rotate-left">
             <div class="project-header-bg bg-abyssal-blue">
                 <div class="project-header">
-                    <!--<h2>Project</h2>-->
-                    <img src="images/projects/games/oddity/logo-oddity-text.svg" alt="ODDITY Logo">
+                    <img src="images/projects/games/oddity/logo-oddity-text.svg" alt="ODDITY">
                 </div>
             </div>
             <div class="project-info-img">
-                <img src="images/projects/games/oddity/oddity-image-4.png" alt="img"></img>
+                <img src="images/projects/games/oddity/oddity-image-4.png" alt="Rearview picture of the Kestrel MK1 on Arka">
             </div>
 
             <div class="project-info-text">
@@ -110,11 +109,11 @@
         <div class="project project-rotate-right">
             <div class="project-header-bg bg-dusk-gray">
                 <div class="project-header" id="dusk-header">
-                    <img src="images/projects/games/dusk/dusk-logo.svg" alt="DUSK Logo">
+                    <img src="images/projects/games/dusk/dusk-logo.svg" alt="DUSK">
                 </div>
             </div>
             <div class="project-info-img">
-                <img src="images/projects/games/dusk/dusk-project-image.png" alt="img"></img>
+                <img src="images/projects/games/dusk/dusk-project-image.png" alt="Dusk Main Island Port">
             </div>
 
             <div class="project-info-text">
@@ -133,8 +132,9 @@
                     <h2>The Tortellini</h2>
                 </div>
             </div>
+
             <div class="project-info-img">
-                <img src="images/projects/3d-art/tortellini/tortellini-project-image.png" alt="img"></img>
+                <img src="images/projects/3d-art/tortellini/tortellini-project-image.png" alt="Image of the Tortellinis thruster">
             </div>
 
             <div class="project-info-text">
@@ -155,7 +155,7 @@
     <p>&copy; Zoe McFife 2025</p>
     <ul>
         <li>
-            <a href="#">Contact</a>
+            <a href="pages/contact.html">Contact</a>
         </li>
         <li>
             <a href="https://github.com/ZoeMcFife">GitHub</a>

@@ -11,6 +11,21 @@
     --transition-time: 0.2s;
 }
 
+.skip-link
+{
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.position-bottom
+{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
 .p-xs  { padding: var(--space-xs); }
 .p-sm  { padding: var(--space-sm); }
 .p-md  { padding: var(--space-md); }

@@ -50,3 +50,8 @@
 {
     font-family: var(--display-font), system-ui;
 }
+
+.text-align-center
+{
+    text-align: center;
+}
