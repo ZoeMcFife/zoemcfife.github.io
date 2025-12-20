@@ -1,0 +1,64 @@
+:root
+{
+    /* === Neutral Colors === */
+    --color-gray-900: #272727; /* Gunpowder Gray */
+    --color-gray-300: #D8D8D8; /* Ash Gray */
+    --color-gray-100: #F0F0F0; /* Off White */
+    --color-white: #FFFFFF; /* White */
+
+    /* === Primary Colors === */
+    --color-red-500: #DB2727; /* Blood Red */
+
+    /* === Transparency === */
+    --color-red-500-35: rgba(219, 39, 39, 0.35);
+    --color-red-500-80: rgba(219, 39, 39, 0.80);
+
+    /* === Project Colors === */
+
+    --color-dusk-gray: #343434; /* Dusk Gray */
+    --color-abyssal-blue: #3F55FF; /* Abyssal Blue */
+
+}
+
+/* Background Colors */
+.bg-gray-900
+{
+    background-color: var(--color-gray-900);
+}
+
+.bg-red-500
+{
+    background-color: var(--color-red-500);
+}
+
+.bg-abyssal-blue
+{
+    background-color: var(--color-abyssal-blue);
+}
+
+.bg-dusk-gray
+{
+    background-color: var(--color-dusk-gray);
+}
+
+/* Text colors*/
+
+.text-white
+{
+    color: var(--color-white);
+}
+
+.text-gray-100
+{
+    color: var(--color-gray-100);
+}
+
+.text-gray-300
+{
+    color: var(--color-gray-300);
+}
+
+.text-gray-900
+{
+    color: var(--color-gray-900);
+}

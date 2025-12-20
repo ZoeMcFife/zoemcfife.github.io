@@ -1,46 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Hello World</title>
+    <title>Zoe McFife - Portfolio</title>
+    <meta name="Author" content="Zoe McFife">
+    <meta name="description" content="Zoe McFife's very cool Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logo/Favicon.png">
+
+    <link rel="stylesheet" href="style/main.css">
 </head>
 
-<style>
-    body
-    {
-        margin:40px auto;
-        max-width:650px;
-        line-height:1.6;
-        font-size:18px;
-        background-color: #3f55ff;
-        color:#f0f0f0;
-        padding:0 10px;
-        font-family: "Berlin Sans FB",sans-serif;
-    }
-    h1,h2,h3
-    {
-        line-height:1.2
-    }
-</style>
-
 <body>
-    <h1>Zoe McFife's Personal Homepage!</h1>
 
-    <h2>Currently w.i.p</h2>
+<!--    My navbar design is split in half
+        so, 2 Divs for left and right side -->
+<header>
+    <nav class="navbar">
+        <div class="navbar-left navbar-slot">
+            <ul class="navbar-slot-list">
+                <li>
+                    <a href="index.html">
+                        <img class="navbar-logo" src="images/logo/Logo.svg" alt="Pirates of Fife Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="navbar-logo-text">Zoe McFife</a>
+                </li>
+            </ul>
+        </div>
 
-    <p> Hi friends!!!! :D </p>
+        <div class="navbar-right navbar-slot">
+            <ul id="navbar-right-desktop" class="navbar-slot-list">
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
 
-    <p>BTW the chatgpt thing that appears when you search my name is not <b>affiliated</b> with me AT ALL. It's made by a pathetic whelp of a person. Please report!</p>
+            <ul id="navbar-right-mobile" class="navbar-slot-list">
+                <li>
+                    <button id="burger-icon-mobile-top" class="burger-icon">
+                        <img src="images/icons/icon-burger.svg" alt="burger">
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <marquee>
-        <img src="under-construction90s-90s.gif">
-    </marquee>
-    <marquee>
-        <img src="under-construction90s-90s.gif">
-    </marquee>
-    <marquee>
-        <img src="under-construction90s-90s.gif">
-    </marquee>
+    <nav id="navbar-mobile" class="navbar-mobile collapsed">
+        <div class="navbar-mobile-logo">
+            <a href="index.html">
+                <img class="navbar-logo" src="images/logo/Logo.svg" alt="Pirates of Fife Logo">
+            </a>
+
+            <a href="index.html" class="navbar-logo-text">Zoe McFife</a>
+        </div>
+
+        <div class="navbar-mobile-links">
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="navbar-mobile-burger-section">
+            <button id="burger-icon-mobile-bottom" class="burger-icon">
+                <img src="images/icons/icon-burger.svg" alt="burger">
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <hgroup>
+            <h1 class="hero-title">Zoe<br>McFife</h1>
+            <p>Portfolio</p>
+        </hgroup>
+        <div class="hero-img">
+            <img src="images/logo/Logo.svg" alt="Logo">
+        </div>
+
+    </section>
+
+    <section class="projects">
+        <div class="project project-rotate-left">
+            <div class="project-header-bg bg-abyssal-blue">
+                <div class="project-header">
+                    <!--<h2>Project</h2>-->
+                    <img src="images/projects/games/oddity/logo-oddity-text.svg" alt="ODDITY Logo">
+                </div>
+            </div>
+            <div class="project-info-img">
+                <img src="images/projects/games/oddity/oddity-image-4.png" alt="img"></img>
+            </div>
+
+            <div class="project-info-text">
+                <p class="project-info-description">
+                    ODDITY is a retro-inspired space sim featuring a modular starship, that you can upgrade and customize. Fight, Explore, Mine and Salvage in six star systems, seamlessly connected without loading screens.
+                </p>
+                <a href="https://pirates-of-fife.itch.io/oddity" class="project-info-view-project">
+                    View Project
+                </a>
+            </div>
+        </div>
+
+        <div class="project project-rotate-right">
+            <div class="project-header-bg bg-dusk-gray">
+                <div class="project-header" id="dusk-header">
+                    <img src="images/projects/games/dusk/dusk-logo.svg" alt="DUSK Logo">
+                </div>
+            </div>
+            <div class="project-info-img">
+                <img src="images/projects/games/dusk/dusk-project-image.png" alt="img"></img>
+            </div>
+
+            <div class="project-info-text">
+                <p class="project-info-description">
+                    Dusk is a  first-person atmospheric horror experience, where you collect maps and chart a course to unexplored islands.
+                </p>
+                <a href="https://pirates-of-fife.itch.io/dusk" class="project-info-view-project">
+                    View Project
+                </a>
+            </div>
+        </div>
+
+        <div class="project project-rotate-left">
+            <div class="project-header-bg ">
+                <div class="project-header">
+                    <h2>The Tortellini</h2>
+                </div>
+            </div>
+            <div class="project-info-img">
+                <img src="images/projects/3d-art/tortellini/tortellini-project-image.png" alt="img"></img>
+            </div>
+
+            <div class="project-info-text">
+                <p class="project-info-description">
+                    The Tortellini is a spaceship featured in Cats in Space. It is the protagonists first spaceship and serves as the introductory vessel. This 3D-Model is a concept that serves as a reference.
+                </p>
+                <a href="#" class="project-info-view-project">
+                    View Project
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <p>All rights reserved.</p>
+    <p>&copy; Zoe McFife 2025</p>
+    <ul>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        <li>
+            <a href="https://github.com/ZoeMcFife">GitHub</a>
+        </li>
+        <li>
+            <a href="https://pirates-of-fife.space">Pirates of Fife</a>
+        </li>
+        <li>
+            <a href="https://discord.gg/YSkWAMbcKQ">Discord</a>
+        </li>
+    </ul>
+</footer>
+
+<script src="scripts/main.js"></script>
 
 </body>
+
 </html>

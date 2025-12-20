@@ -1,0 +1,63 @@
+body
+{
+    font-family: var(--body-font), system-ui;
+    font-size: var(--font-size-base);
+
+    background-color: var(--color-gray-900);
+    color: var(--color-gray-300);
+
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1
+{
+    font-size: var(--font-size-h1);
+    font-family: var(--display-font), system-ui;
+}
+
+h2
+{
+    font-size: var(--font-size-h2);
+    font-family: var(--body-font), system-ui;
+    font-weight: var(--font-weight-h2);
+}
+
+h3
+{
+    font-size: var(--font-size-h3);
+    font-family: var(--body-font), system-ui;
+    font-weight: var(--font-weight-h3);
+}
+
+/* Body */
+
+p
+{
+    font-family: var(--body-font), system-ui;
+    font-weight: var(--font-weight-p);
+}
+
+a
+{
+    color: var(--color-gray-300);
+
+    transition: all var(--transition-time) ease-in-out;
+}
+
+a:hover
+{
+    filter: drop-shadow(0 0 6px var(--color-gray-900));
+}
+
+main
+{
+    padding-top: var(--space-xxl);
+
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+

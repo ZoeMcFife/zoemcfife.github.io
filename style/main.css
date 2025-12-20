@@ -1,0 +1,9 @@
+@layer base, components, color, typography, theme, utilities;
+
+@import "base.css" layer(base);
+@import "color.css" layer(color);
+@import "components.css" layer(components);
+@import "typography.css" layer(typography);
+@import "utilities.css" layer(utilities);
+
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');

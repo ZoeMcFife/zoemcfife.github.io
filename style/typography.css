@@ -1,0 +1,52 @@
+:root
+{
+    --display-font: "Pirata One";
+    --body-font: "Raleway";
+
+    --font-size-base: 16px;
+
+    --font-size-h1: 3rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.5rem;
+
+    --font-weight-h2: 400;
+    --font-weight-h3: 200;
+    --font-weight-p: 250;
+
+    --font-size-display-1: 5rem;
+    --font-size-display-2: 4rem;
+    --font-size-display-3: 3rem;
+
+    --project-image-size-1: 7rem;
+    --project-image-size-2: 5rem;
+    --project-image-size-3: 4rem;
+
+    --font-size-hero-title: 12rem;
+    --font-size-hero-title-md: 8rem;
+    --font-size-hero-title-sm: 6rem;
+}
+
+
+
+.display-1
+{
+    font-size: var(--font-size-display-1);
+    font-family: var(--display-font), system-ui;
+}
+
+.display-2
+{
+    font-size: var(--font-size-display-2);
+    font-family: var(--display-font), system-ui;
+}
+
+.display-3
+{
+    font-size: var(--font-size-display-3);
+    font-family: var(--display-font), system-ui;
+}
+
+.text-display-font
+{
+    font-family: var(--display-font), system-ui;
+}
