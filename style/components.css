@@ -726,5 +726,34 @@ footer
     margin: var(--space-xl);
 }
 
+.badges
+{
+    padding: var(--space-lg);
+    margin: auto;
+}
 
 
+
+.badge
+{
+    width: 88px;
+    height: 31px;
+    padding: var(--space-xs);
+}
+
+.badge a
+{
+    line-height: 0;
+    display: inline-block;
+}
+
+.badge:hover
+{
+    border-width: 3px;
+    border-color: var(--color-red-500);
+}
+
+.badge img
+{
+    image-rendering: pixelated;
+}
