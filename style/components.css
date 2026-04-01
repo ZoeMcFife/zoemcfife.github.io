@@ -728,14 +728,42 @@ footer
 
 .badges
 {
+    display: grid;
+
+    grid-template-columns: repeat(10, 1fr);
+
     padding: var(--space-lg);
     margin: auto;
 }
 
+@media screen and (max-width: 1200px)
+{
+    .badges
+    {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
 
+@media screen and (max-width: 650px)
+{
+    .badges
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 333px)
+{
+    .badges
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 .badge
 {
+    display: flex;
+
     width: 88px;
     height: 31px;
     padding: var(--space-xs);
@@ -743,6 +771,7 @@ footer
 
 .badge a
 {
+    padding: 0;
     line-height: 0;
     display: inline-block;
 }
