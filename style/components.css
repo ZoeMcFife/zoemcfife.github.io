@@ -767,18 +767,22 @@ footer
     width: 88px;
     height: 31px;
     padding: var(--space-xs);
+
+    border: 3px solid transparent;
+    border-radius: var(--space-xs);
 }
 
 .badge a
 {
     padding: 0;
     line-height: 0;
+    margin: 0;
     display: inline-block;
+    border: none;
 }
 
 .badge:hover
 {
-    border-width: 3px;
     border-color: var(--color-red-500);
 }
 
