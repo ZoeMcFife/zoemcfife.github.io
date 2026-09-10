@@ -847,7 +847,7 @@ footer
 .gallery
 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: var(--space-md);
     margin: auto;
 
@@ -857,4 +857,20 @@ footer
 .gallery img
 {
     width: 100%;
+}
+
+@media screen and (max-width: 1600px)
+{
+    .gallery
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .gallery
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
