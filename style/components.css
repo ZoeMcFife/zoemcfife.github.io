@@ -803,3 +803,58 @@ footer
     line-height: 9rem;
     text-align: center;
 }
+
+.deer-on-page
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50vh;
+
+    transition: all var(--transition-time) ease-in-out;
+
+}
+
+.deer-on-page:hover
+{
+    rotate: -7deg;
+    scale: 130%;
+    transition: all var(--transition-time) ease-in-out;
+}
+
+
+@media screen and (max-width: 1200px)
+{
+    .deer-on-page
+    {
+        height: 30vh;
+    }
+}
+
+.deer-link
+{
+    margin: 0;
+    padding: 0;
+}
+
+.refsheet
+{
+    width: 80vw;
+    padding: var(--space-md);
+    margin: auto;
+}
+
+.gallery
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--space-md);
+    margin: auto;
+
+    padding: var(--space-md);
+}
+
+.gallery img
+{
+    width: 100%;
+}
