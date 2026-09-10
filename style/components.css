@@ -790,3 +790,16 @@ footer
 {
     image-rendering: pixelated;
 }
+
+.main-page-img
+{
+    width: 100%;
+}
+
+.big-title
+{
+    font-family: var(--display-font), system-ui;
+    font-size: 10rem;
+    line-height: 9rem;
+    text-align: center;
+}
