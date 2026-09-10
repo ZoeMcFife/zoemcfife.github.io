@@ -419,6 +419,15 @@ footer
     text-align: center;
 }
 
+@media screen and (max-width: 400px)
+{
+    footer ul li
+    {
+        text-align: left;
+        padding-left: var(--space-xl);
+    }
+}
+
 .projects
 {
     display: grid;
@@ -852,6 +861,14 @@ footer
     margin: auto;
 
     padding: var(--space-md);
+}
+
+@media screen and (max-width: 530px)
+{
+    .gallery
+    {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
 }
 
 .gallery a {
