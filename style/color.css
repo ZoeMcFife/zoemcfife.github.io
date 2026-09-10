@@ -95,3 +95,8 @@
 {
     color: var(--color-gray-900);
 }
+
+.text-red
+{
+    color: var(--color-red-500);
+}
